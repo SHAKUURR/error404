@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #BA265D;
+  color: #000;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.header {
+  margin-top: 3rem;
+  width: 50rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+.name {
+  margin-left: 1rem;
+}
+
+header img {
+  width: 5rem;
+  border-radius: 50%;
+  border: 2px solid rgb(243, 202, 21);
+}
+
+.main-name {
+  font-size: 1.4rem;
+  color: rgb(243, 202, 21);
+}
+
+
+section {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section img {
+  width: 35rem;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 1.2rem;
+  color: rgb(243, 202, 21);
+  ;
+}
+
+section p {
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+  line-height: 1.8;
+
+
+
+}
+
+.btn {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #fff;
+  color: #BA265D;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  transition: all .2s;
+
+}
+
+.btn:focus,
+.btn:hover {
+  animation: pulsate 1s infinite;
+}
+
+.home {
+  margin-right: 3rem;
+}
+
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, .25);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+
+  }
+}
